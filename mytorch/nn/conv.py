@@ -1,6 +1,3 @@
-# Do not import any additional 3rd party external libraries as they will not
-# be available to AutoLab and are not needed (or allowed)
-
 import numpy as np
 from resampling import *
 
