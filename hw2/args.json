@@ -1,0 +1,104 @@
+{
+    "train_cls_server": {
+        "exp_name": "resnet34_04",
+        "exp_load": "resnet34_04_20220315-012358",
+        "train_dir": "/home/ubuntu/data/classification/classification/train",
+        "val_dir": "/home/ubuntu/data/classification/classification/dev",
+        "test_dir": "/home/ubuntu/data/classification/classification/test",
+        "model_dir": "/home/ubuntu/efs/model/hw2",
+        "wandb_proj": "11785-hw2p2",
+        "batch_size": 128,
+        "lr": 0.3,
+        "label_smoothing": 0.2,
+        "epochs": 80
+    },
+    "train_cls_server_t": {
+        "exp_name": "inception_t_01",
+        "exp_load": "base_01_20220306-001345",
+        "train_dir": "/home/ubuntu/data/classification/classification/train",
+        "val_dir": "/home/ubuntu/data/classification/classification/dev",
+        "test_dir": "/home/ubuntu/data/classification/classification/test",
+        "model_dir": "/home/ubuntu/efs/model/hw2",
+        "wandb_proj": "11785-hw2p2",
+        "batch_size": 64,
+        "lr": 0.1,
+        "triple_margin": 0.5,
+        "triple_p": 2,
+        "epochs": 100
+    },
+    "train_cls_colab": {
+        "exp_name": "resnet34_04",
+        "exp_load": "base_02_20220312-111416",
+        "train_dir": "/content/classification/classification/train",
+        "val_dir": "/content/classification/classification/dev",
+        "test_dir": "/content/classification/classification/test",
+        "model_dir": "/content/drive/MyDrive/CMU/dev/dl-hw2/model",
+        "wandb_proj": "11785-hw2p2",
+        "batch_size": 128,
+        "lr": 0.3,
+        "label_smoothing": 0.2,
+        "epochs": 50
+    },
+    "train_veri_server": {
+        "exp_load": "resnet34_04_20220315-012358",
+        "ver_dir": "/home/ubuntu/data/verification/verification",
+        "train_dir": "/home/ubuntu/data/classification/classification/train",
+        "val_dir": "/home/ubuntu/data/verification/verification/dev",
+        "model_dir": "/home/ubuntu/efs/model/hw2",
+        "batch_size": 64,
+        "triple_margin": 0.2,
+        "triple_p": 2,
+        "epochs": 30
+    },
+    "train_veri_colab": {
+        "exp_load": "inception_02_20220314-115920",
+        "ver_dir": "/content/verification/verification",
+        "train_dir": "/content/classification/classification/train",
+        "val_dir": "/content/verification/verification/dev",
+        "model_dir": "/content/drive/MyDrive/CMU/dev/dl-hw2/model",
+        "batch_size": 64,
+        "triple_margin": 0.2,
+        "triple_p": 2,
+        "epochs": 20
+    },
+    "predict_cls_server": {
+        "exp_load": "resnet34_04_20220315-012358",
+        "train_dir": "/home/ubuntu/data/classification/classification/train",
+        "test_dir": "/home/ubuntu/data/classification/classification/test",
+        "model_dir": "/home/ubuntu/efs/model/hw2",
+        "batch_size": 128,
+        "kaggle_msg": "Submission 06",
+        "kaggle_prj": "11-785-s22-hw2p2-classification"
+    },
+    "predict_cls_colab": {
+        "exp_load": "inception_01_20220312-224230",
+        "train_dir": "/content/classification/classification/train",
+        "test_dir": "/content/classification/classification/test",
+        "model_dir": "/content/drive/MyDrive/CMU/dev/dl-hw2/model",
+        "batch_size": 128,
+        "kaggle_msg": "Submission 04",
+        "kaggle_prj": "11-785-s22-hw2p2-classification"
+    },
+    "predict_veri_server": {
+        "exp_load": "inception_01_20220312-224230",
+        "ver_dir": "/home/ubuntu/data/verification/verification",
+        "train_dir": "/home/ubuntu/data/classification/classification/train",
+        "val_dir": "/home/ubuntu/data/verification/verification/dev",
+        "test_dir": "/home/ubuntu/data/verification/verification/test",
+        "model_dir": "/home/ubuntu/efs/model/hw2",
+        "batch_size": 128,
+        "kaggle_msg": "Submission 03",
+        "kaggle_prj": "11-785-s22-hw2p2-verification"
+    },
+    "predict_veri_colab": {
+        "exp_load": "inception_01_20220312-224230",
+        "ver_dir": "/content/verification/verification",
+        "train_dir": "/content/classification/classification/train",
+        "val_dir": "/content/verification/verification/dev",
+        "test_dir": "/content/verification/verification/test",
+        "model_dir": "/content/drive/MyDrive/CMU/dev/dl-hw2/model",
+        "batch_size": 128,
+        "kaggle_msg": "Submission 03",
+        "kaggle_prj": "11-785-s22-hw2p2-verification"
+    }
+}
