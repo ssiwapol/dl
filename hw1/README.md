@@ -5,7 +5,7 @@
 
 **User:** Aaron
 
-**Ranking:** 46/372
+**Ranking:** 42/372
 
 ## Problem Statement
 In this competition, you will create a multilayer perceptron for frame-level speech recognition. Specifically, you will create a frame-level phonetic transcription of raw Mel Frequency Cepstral Coefficients (MFCCs). The MLP will learn a feature representation and nonlinear classification boundary. To discriminate between each phoneme class label, cross-entropy loss will be used to minimize the dissimilarity between output logits and the target labels. The loss will be used during gradient descent to update the parameters of the neural network, thereby minimizing the cost function.

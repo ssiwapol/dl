@@ -12,7 +12,7 @@ open-set problem.
 
 **Goal:** Given a person’s face, return the ID of the face
 
-**Ranking:** 103/354
+**Ranking:** 100/354
 
 **User:** Aaron
 
